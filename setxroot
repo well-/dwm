@@ -1,0 +1,16 @@
+#! /bin/bash
+
+
+
+
+SONG=$(ncmpcpp --now-playing | sed -e 's/([^()]*)//g')
+
+xsetroot -name " $SONG  $(date +"%a %b %d %R")"
+sleep 5 
+done &
+
+
+
+
+
+
